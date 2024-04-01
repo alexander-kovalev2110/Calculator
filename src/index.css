@@ -1,0 +1,75 @@
+* {
+  font-family: sans-serif;
+  font-size: 10px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+}
+
+.calculator {
+  width: 250px;
+  height: 370px;
+  background-color: #334E58;
+  position: relative;
+  padding: 3rem;
+  border-radius: 8px;
+}
+
+.calcCard {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+}
+
+.display {
+  width: 100%;
+  height: 50px; 
+  background-color: #fce8d6;
+  font-size: 30px;
+  text-align: right;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btnRow {
+  height: 56px;
+  display: flex;
+  gap: 6px;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #334E58;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: yellowgreen;
+  color: white;
+}
+
+button:active {
+  transform: scale(1.2);
+}
+
+.operBtn {
+  background-color:#968c8c;
+  color: white;
+}
+
+.fiveBtn {
+  background-color:#ce9f48;
+  color: white;
+}
+
+.zeroBtn {
+  width: 241%;
+}
