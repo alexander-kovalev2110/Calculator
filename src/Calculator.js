@@ -24,28 +24,30 @@ const Calculator = () => {
   };
 
   const calculateResult = () => {
-    const firstNum = parseFloat(firstNumber);
-    const secondNum = parseFloat(secondNumber);
-    let result;
-
-    switch (operator) {
-      case "+":
-        result = firstNum + secondNum;
-        break;
-      case "-":
-        result = firstNum - secondNum;
-        break;
-      case "*":
-        result = firstNum * secondNum;
-        break;
-      case "/":
-        result = firstNum / secondNum;
-        break;
+    if (firstNumber && secondNumber) {
+      const firstNum = parseFloat(firstNumber);
+      const secondNum = parseFloat(secondNumber);
+      let result;
+  
+      switch (operator) {
+        case "+":
+          result = firstNum + secondNum;
+          break;
+        case "-":
+          result = firstNum - secondNum;
+          break;
+        case "*":
+          result = firstNum * secondNum;
+          break;
+        case "/":
+          result = firstNum / secondNum;
+          break;
+      }
+  
+      setResult(result.toString());
+      setFirstNumber(result.toString());
+      setSecondNumber("");
     }
-
-    setResult(result.toString());
-    setFirstNumber(result.toString());
-    setSecondNumber("");
   };
 
   const handleClearClick = () => {
